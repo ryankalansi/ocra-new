@@ -1,0 +1,14 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+.container-fluid {
+  width: 150%;
+  height: 150%;
+}
+
+.img-fluid {
+  cursor: pointer;
+}
