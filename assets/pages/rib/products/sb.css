@@ -1,0 +1,66 @@
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.product-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-information {
+  padding: 20px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: thin;
+  color: grey;
+}
+
+.description {
+  font-size: 16px;
+  color: black;
+}
+
+.variants {
+  margin-top: 20px;
+}
+
+.variants ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.variants li {
+  margin-bottom: 10px;
+}
+
+.variants label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.variants select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.btn-primary {
+  background-color: #337ab7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0);
+}

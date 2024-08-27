@@ -6,9 +6,16 @@ main {
 
 .container-fluid {
   width: 150%;
-  height: 150%;
+  height: 100%;
 }
 
-.img-fluid {
+.img-fluid:hover {
   cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .container-fluid {
+    width: 200%;
+    height: 200%;
+  }
 }
