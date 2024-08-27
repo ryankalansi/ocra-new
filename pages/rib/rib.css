@@ -1,0 +1,32 @@
+.carousel-item img {
+  object-fit: cover;
+}
+
+.sb,
+.sg,
+.sw,
+.bc,
+.rc {
+  transition: content 0.7s; /* add transition effect */
+}
+
+.sb:hover {
+  cursor: pointer;
+  content: url("../../images/rib/RIB-BLACK-B.JPG");
+}
+.sg:hover {
+  cursor: pointer;
+  content: url("../../images/rib/RIB-GREY-B.JPG");
+}
+.sw:hover {
+  cursor: pointer;
+  content: url("../../images/rib/RIB-WHITE-B.JPG");
+}
+.bc:hover {
+  cursor: pointer;
+  content: url("../../images/rib/RIB-Black-Cap-B.jpg");
+}
+.rc:hover {
+  cursor: pointer;
+  content: url("../../images/rib/RIB-Red-Cap-S.jpg");
+}
