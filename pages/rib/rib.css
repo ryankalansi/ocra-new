@@ -2,31 +2,31 @@
   object-fit: cover;
 }
 
-.sb,
-.sg,
-.sw,
+.bs,
+.gs,
+.ws,
 .bc,
 .rc {
   transition: content 0.7s; /* add transition effect */
 }
 
-.sb:hover {
+.bs:hover {
   cursor: pointer;
-  content: url("../../images/rib/RIB-BLACK-B.JPG");
+  content: url("../../assets/images/rib/BLACK-SHIRT-BACK.JPG");
 }
-.sg:hover {
+.gs:hover {
   cursor: pointer;
-  content: url("../../images/rib/RIB-GREY-B.JPG");
+  content: url("../../assets/images/rib/GREY-SHIRT-BACK.JPG");
 }
-.sw:hover {
+.ws:hover {
   cursor: pointer;
-  content: url("../../images/rib/RIB-WHITE-B.JPG");
+  content: url("../../assets/images/rib/WHITE-SHIRT-BACK.JPG");
 }
 .bc:hover {
   cursor: pointer;
-  content: url("../../images/rib/RIB-Black-Cap-B.jpg");
+  content: url("../../assets/images/rib/BLACK-CAP-BACK.JPG");
 }
 .rc:hover {
   cursor: pointer;
-  content: url("../../images/rib/RIB-Red-Cap-S.jpg");
+  content: url("../../assets/images/rib/RED-CAP-SIDE.jpg");
 }
