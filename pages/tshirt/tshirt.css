@@ -1,0 +1,23 @@
+.bs,
+.gs,
+.ws,
+.og {
+  transition: content 0.7s; /* add transition effect */
+}
+
+.bs:hover {
+  cursor: pointer;
+  content: url("../../assets/images/rib/BLACK-SHIRT-BACK.JPG");
+}
+.gs:hover {
+  cursor: pointer;
+  content: url("../../assets/images/rib/GREY-SHIRT-BACK.JPG");
+}
+.ws:hover {
+  cursor: pointer;
+  content: url("../../assets/images/rib/WHITE-SHIRT-BACK.JPG");
+}
+.og:hover {
+  cursor: pointer;
+  content: url("../../assets/images/podium-ocra/ocra-green-b.jpg");
+}
