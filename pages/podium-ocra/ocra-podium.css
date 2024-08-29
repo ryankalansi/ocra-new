@@ -1,0 +1,28 @@
+.tj,
+.og,
+.cb,
+.cn,
+.cg {
+  transition: content 0.7s; /* add transition effect */
+}
+
+.tj:hover {
+  cursor: pointer;
+  content: url("../../assets/images/podium-ocra/team-jersey-b.jpg");
+}
+.og:hover {
+  cursor: pointer;
+  content: url("../../assets/images/podium-ocra/ocra-green-b.jpg");
+}
+.cb:hover {
+  cursor: pointer;
+  content: url("../../assets/images/podium-ocra/cap-blue-b.jpg");
+}
+.cn:hover {
+  cursor: pointer;
+  content: url("../../assets/images/podium-ocra/cap-navy-b.jpg");
+}
+.cg:hover {
+  cursor: pointer;
+  content: url("../../assets/images/podium-ocra/cap-green-b.jpg");
+}
