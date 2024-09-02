@@ -1,33 +1,29 @@
-document.addEventListener("DOMContentLoaded", (event) => {
-  const images = document.querySelectorAll("main .img-fluid");
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".img-fluid");
 
-  images.forEach((img) => {
-    img.style.cursor = "pointer";
-    img.addEventListener("mousedown", (e) => {
-      img.style.cursor = "grabbing";
-      const shiftX = e.clientX - img.getBoundingClientRect().left;
-      const shiftY = e.clientY - img.getBoundingClientRect().top;
+  elements.forEach((element, index) => {
+    setTimeout(() => {
+      element.classList.add("active");
+      element.classList.add(
+        index % 2 === 0 ? "slide-in-left" : "slide-in-right"
+      );
+    }, index * 200); // Delay for staggered effect
+  });
 
-      const moveAt = (pageX, pageY) => {
-        img.style.left = pageX - shiftX + "px";
-        img.style.top = pageY - shiftY + "px";
-      };
-
-      const onMouseMove = (e) => {
-        moveAt(e.pageX, e.pageY);
-      };
-
-      document.addEventListener("mousemove", onMouseMove);
-
-      img.onmouseup = () => {
-        document.removeEventListener("mousemove", onMouseMove);
-        img.style.cursor = "grab";
-        img.onmouseup = null;
-      };
+  window.addEventListener("scroll", function () {
+    elements.forEach((element, index) => {
+      const rect = element.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        element.classList.add("active");
+        element.classList.add(
+          index % 2 === 0 ? "slide-in-right" : "slide-in-left"
+        );
+      } else {
+        element.classList.remove("active");
+        element.classList.remove(
+          index % 2 === 0 ? "slide-in-right" : "slide-in-left"
+        );
+      }
     });
-
-    img.ondragstart = () => {
-      return false;
-    };
   });
 });

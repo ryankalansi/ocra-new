@@ -15,87 +15,95 @@
     <!-- CSS -->
     <link rel="stylesheet" href="app.css" />
 
-    <title>Document</title>
+    <title>Ocra Activity</title>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <div class="container py-2">
         <a class="navbar-brand" href="#"
           ><img
             src="assets/images/logo.jpg"
-            alt=""
+            alt="logo"
             style="width: 50px; height: 50px"
         /></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border border-0"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon border border-0"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#shop"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Shop
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="pages/tshirt/tshirt.html"
-                    >T-shirt</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="#cap">Cap</a></li>
-                <li>
-                  <a class="dropdown-item" href="#jersey">Jersey</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#accessories">Accessories</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Collections
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="pages/rib/rib.html"
-                    >Rest in Beats 2024</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="pages/podium-ocra/ocra-podium.html"
-                    >PODIUM X Ocra Slow Pitch Capsule Collection 2023</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <img
+              src="assets/images/logo.jpg"
+              class="offcanvas-title"
+              id="offcanvasNavbarLabel"
+              img
+            />
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body justify-content-center align-items-center">
+            <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/tshirt/tshirt.html">T-shirt</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/">Cap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/">Jersey</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/">Accessories</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Collections
+                </a>
+                <ul class="dropdown-menu dropdown-menu border border-0 p-lg-4">
+                  <li>
+                    <a class="dropdown-item" href="pages/rib/rib.html"
+                      >Rest in Beats 2024</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider bg-white" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="pages/podium-ocra/ocra-podium.html"
+                      >PODIUM X Ocra Slow Pitch <br />
+                      Capsule Collection 2023</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -104,59 +112,68 @@
     <main>
       <div class="container-fluid">
         <div class="row">
+          <!-- kolom 1 -->
           <div class="col-4 col-xl-3">
-            <a href="pages/rib/products/blackShirt.html"
-              ><img
+            <a href="pages/rib/products/blackShirt.html">
+              <img
                 src="assets/images/rib/BLACK-SHIRT.jpg"
-                class="img-fluid"
+                class="img-fluid slide-in-left"
                 alt="black-shirt"
-            /></a>
+              />
+            </a>
           </div>
           <div class="col-4 col-xl-3">
-            <a href="pages/rib/products/whiteShirt.html"
-              ><img
+            <a href="pages/rib/products/whiteShirt.html">
+              <img
                 src="assets/images/rib/WHITE-SHIRT.JPG"
-                class="img-fluid"
+                class="img-fluid slide-in-left"
                 alt="white-shirt"
-            /></a>
+              />
+            </a>
           </div>
           <div class="col-4 col-xl-3">
-            <a href="pages/rib/products/greyShirt.html"
-              ><img
+            <a href="pages/rib/products/greyShirt.html">
+              <img
                 src="assets/images/rib/GREY-SHIRT.JPG"
-                class="img-fluid"
+                class="img-fluid slide-in-left"
                 alt="grey-shirt"
-            /></a>
+              />
+            </a>
           </div>
           <div class="col-4 col-xl-3">
-            <a href="pages/rib/products/blackCap.html"
-              ><img
+            <a href="pages/rib/products/blackCap.html">
+              <img
                 src="assets/images/rib/BLACK-CAP.jpg"
-                class="img-fluid"
+                class="img-fluid slide-in-left"
                 alt="black-cap"
-            /></a>
+              />
+            </a>
           </div>
+
+          <!-- kolom 2 -->
           <div class="col-4 col-xl-3">
-            <a href="pages/rib/products/redCap.html"
-              ><img
+            <a href="pages/rib/products/redCap.html">
+              <img
                 src="assets/images/rib/RED-CAP.jpg"
-                class="img-fluid"
+                class="img-fluid slide-in-right"
                 alt="red-cap"
-            /></a>
+              />
+            </a>
           </div>
           <div class="col-4 col-xl-3">
-            <a href="pages/podium-ocra/products/teamJersey.html"
-              ><img
+            <a href="pages/podium-ocra/products/teamJersey.html">
+              <img
                 src="assets/images/podium-ocra/team-jersey.jpg"
-                class="img-fluid"
+                class="img-fluid slide-in-right"
                 alt="team-jersey"
-            /></a>
+              />
+            </a>
           </div>
           <div class="col-4 col-xl-3">
             <a href="pages/podium-ocra/products/ocraGreen.html">
               <img
                 src="assets/images/podium-ocra/ocra-green.jpg"
-                class="img-fluid"
+                class="img-fluid slide-in-right"
                 alt="shirt-black"
               />
             </a>
@@ -165,16 +182,18 @@
             <a href="pages/podium-ocra/products/toteBag.html">
               <img
                 src="assets/images/podium-ocra/tote-bag.jpg"
-                class="img-fluid"
+                class="img-fluid slide-in-right"
                 alt="shirt-black"
               />
             </a>
           </div>
+
+          <!-- kolom 3 -->
           <div class="col-4 col-xl-3">
             <a href="pages/podium-ocra/products/glassCup.html">
               <img
                 src="assets/images/podium-ocra/glass-cup.jpg"
-                class="img-fluid"
+                class="img-fluid slide-in-left"
                 alt="shirt-black"
               />
             </a>
@@ -183,7 +202,7 @@
             <a href="pages/podium-ocra/products/stickerPack.html">
               <img
                 src="assets/images/podium-ocra/sticker-pack.jpg"
-                class="img-fluid"
+                class="img-fluid slide-in-left"
                 alt="shirt-black"
               />
             </a>
@@ -192,7 +211,7 @@
             <a href="pages/podium-ocra/products/capNavy.html">
               <img
                 src="assets/images/podium-ocra/cap-navy.jpg"
-                class="img-fluid"
+                class="img-fluid slide-in-left"
                 alt="shirt-black"
               />
             </a>
@@ -201,16 +220,18 @@
             <a href="pages/podium-ocra/products/capBlue.html">
               <img
                 src="assets/images/podium-ocra/cap-blue.jpg"
-                class="img-fluid"
+                class="img-fluid slide-in-left"
                 alt="shirt-black"
               />
             </a>
           </div>
+
+          <!-- kolom 4 -->
           <div class="col-4 col-xl-3">
             <a href="pages/podium-ocra/products/capGreen.html">
               <img
                 src="assets/images/podium-ocra/cap-green.jpg"
-                class="img-fluid"
+                class="img-fluid slide-in-right"
                 alt="shirt-black"
               />
             </a>
