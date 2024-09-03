@@ -1,7 +1,8 @@
 .bs,
 .gs,
 .ws,
-.og {
+.og,
+.tjb {
   transition: content 0.7s; /* add transition effect */
 }
 
@@ -20,4 +21,8 @@
 .og:hover {
   cursor: pointer;
   content: url("../../assets/images/podium-ocra/ocra-green-b.jpg");
+}
+.tjb:hover {
+  cursor: pointer;
+  content: url("../../assets/images/podium-ocra/team-jersey-b.jpg");
 }
