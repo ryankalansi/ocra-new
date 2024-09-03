@@ -1,8 +1,0 @@
-.sp {
-  transition: content 0.7s; /* add transition effect */
-}
-
-.sp:hover {
-  cursor: pointer;
-  content: url("../../assets/images/podium-ocra/sticker-pack-plastic.jpg");
-}

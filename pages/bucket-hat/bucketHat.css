@@ -1,0 +1,32 @@
+.bc,
+.rc,
+.cb,
+.cg,
+.cn {
+  transition: content 0.7s; /* add transition effect */
+}
+
+.bc:hover {
+  cursor: pointer;
+  content: url("../../assets/images/rib/BLACK-CAP-BACK.JPG");
+}
+
+.rc:hover {
+  cursor: pointer;
+  content: url("../../assets/images/rib/RED-CAP-SIDE.jpg");
+}
+
+.cb:hover {
+  cursor: pointer;
+  content: url("../../assets/images/podium-ocra/cap-blue-b.jpg");
+}
+
+.cg:hover {
+  cursor: pointer;
+  content: url("../../assets/images/podium-ocra/cap-green-b.jpg");
+}
+
+.cn:hover {
+  cursor: pointer;
+  content: url("../../assets/images/podium-ocra/cap-navy-b.jpg");
+}
