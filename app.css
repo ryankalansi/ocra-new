@@ -1,18 +1,37 @@
 .slide-in-left {
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: transform 1.5s ease-out, opacity 0.5s ease-out;
+  animation: slideInLeft 1s ease-out forwards;
 }
 
 .slide-in-right {
-  transform: translatex(100%);
-  opacity: 0;
-  transition: transform 1.5s ease-out, opacity 0.5s ease-out;
+  animation: slideInRight 1s ease-out forwards;
 }
 
-.active {
-  transform: translateX(0);
-  opacity: 1;
+.img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .img-fluid:hover {
@@ -26,5 +45,11 @@
   }
   50% {
     transform: scale(1.05);
+  }
+}
+
+@media (max-width: 768px) {
+  .img-fluid {
+    animation: pulse 1.5s infinite;
   }
 }
