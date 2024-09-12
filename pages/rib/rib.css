@@ -2,6 +2,11 @@
   object-fit: cover;
 }
 
+.title {
+  font-family: "libre Baskerville", sans-serif;
+  font-style: normal;
+}
+
 .bs,
 .gs,
 .ws,
