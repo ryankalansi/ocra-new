@@ -1,3 +1,30 @@
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 10s slide infinite linear;
+}
+.logos-slide img {
+  height: 100px;
+  margin: 0 40px;
+}
 .slide-in-left {
   animation: slideInLeft 1s ease-out forwards;
 }
