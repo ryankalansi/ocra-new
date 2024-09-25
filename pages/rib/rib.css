@@ -2,6 +2,12 @@
   object-fit: cover;
 }
 
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
 .title {
   font-family: "libre Baskerville", sans-serif;
   font-style: normal;
