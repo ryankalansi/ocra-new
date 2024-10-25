@@ -1,0 +1,50 @@
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-item img {
+  object-fit: cover;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+body {
+  height: 1000vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.uh12,
+.uh14,
+.uh16,
+.uh18,
+.cg {
+  transition: content 0.7s; /* add transition effect */
+}
+
+.uh12:hover {
+  cursor: pointer;
+  content: url("../../assets/images/bdd/UnsungHeroes_Merchandise-13.jpg");
+}
+.uh14:hover {
+  cursor: pointer;
+  content: url("../../assets/images/bdd/UnsungHeroes_Merchandise-15.jpg");
+}
+.uh16:hover {
+  cursor: pointer;
+  content: url("../../assets/images/bdd/UnsungHeroes_Merchandise-17.jpg");
+}
+.uh18:hover {
+  cursor: pointer;
+  content: url("../../assets/images/bdd/UnsungHeroes_Merchandise-19.jpg");
+}
+.uh:hover {
+  cursor: pointer;
+  content: url("../../assets/images/podium-ocra/cap-green-b.jpg");
+}
