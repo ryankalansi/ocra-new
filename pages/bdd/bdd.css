@@ -48,3 +48,9 @@ body {
   cursor: pointer;
   content: url("../../assets/images/podium-ocra/cap-green-b.jpg");
 }
+
+@media (min-width: 767.98px) {
+  .content-img {
+    width: 100%;
+  }
+}
