@@ -53,10 +53,3 @@ body {
     width: 100%;
   }
 }
-
-@media (max-width: 400px) {
-  .description h1,
-  p {
-    font-size: 90%;
-  }
-}
