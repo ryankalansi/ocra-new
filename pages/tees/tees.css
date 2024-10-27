@@ -1,3 +1,13 @@
+h1 {
+  font-family: "libre Baskerville", sans-serif;
+  font-style: normal;
+}
+
+p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+}
+
 .bs,
 .gs,
 .ws,
