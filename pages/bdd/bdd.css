@@ -53,3 +53,9 @@ body {
     width: 100%;
   }
 }
+
+@media (max-width: 407px) {
+  .description p {
+    font-size: 85%;
+  }
+}
