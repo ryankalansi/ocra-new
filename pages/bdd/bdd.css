@@ -31,7 +31,7 @@ p {
 
 .uh12,
 .uh14,
-.uh16,
+.uh17,
 .uh18,
 .cg {
   transition: content 0.7s; /* add transition effect */
@@ -45,9 +45,9 @@ p {
   cursor: pointer;
   content: url("../../assets/images/bdd/UnsungHeroes_Merchandise-15.jpg");
 }
-.uh16:hover {
+.uh17:hover {
   cursor: pointer;
-  content: url("../../assets/images/bdd/UnsungHeroes_Merchandise-17.jpg");
+  content: url("../../assets/images/bdd/UnsungHeroes_Merchandise-16.jpg");
 }
 .uh18:hover {
   cursor: pointer;
