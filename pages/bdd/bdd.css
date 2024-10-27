@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .container-fluid {
   padding: 0;
   margin: 0;
@@ -13,10 +19,14 @@
   border-radius: 50%;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+h1 {
+  font-family: "libre Baskerville", sans-serif;
+  font-style: normal;
+}
+
+p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
 }
 
 .uh12,
